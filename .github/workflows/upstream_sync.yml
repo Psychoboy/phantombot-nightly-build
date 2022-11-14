@@ -8,9 +8,9 @@ on:
 
 jobs:
   repo-sync:
-    name: Sync Repo with PhantomBot/nightly-build
+    name: Sync Repo with Psychoboy/nightly-build
     runs-on: ubuntu-latest
-    if: github.repository != 'PhantomBot/nightly-build'
+    if: github.repository != 'Psychoboy/nightly-build'
     steps:
     - name: Check Enabled
       id: check_enabled
@@ -33,7 +33,7 @@ jobs:
       if: contains(steps.check_enabled.outputs.enabled, 'yes')
       uses: repo-sync/github-sync@v2
       with:
-        source_repo: "PhantomBot/nightly-build"
+        source_repo: "Psychoboy/nightly-build"
         source_branch: "master"
         destination_branch: "master"
         github_token: ${{ secrets.GITHUB_TOKEN }}
