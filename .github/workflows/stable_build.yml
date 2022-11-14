@@ -21,9 +21,9 @@ jobs:
     - name: Get Revision Variables
       id: build_env
       run: |
-        LATEST=$(curl --silent "https://api.github.com/repos/PhantomBot/PhantomBot/releases/latest")
+        LATEST=$(curl --silent "https://api.github.com/repos/Psychoboy/PhantomBot/releases/latest")
         BRANCH=$(echo $LATEST | grep '"tag_name":' | sed -E 's/.*"tag_name":\s*"([^"]+)".*/\1/')
-        SHA=$(curl --silent "https://api.github.com/repos/PhantomBot/PhantomBot/commits/${BRANCH}" | grep '"sha":' | sed -E 's/.*"sha":\s*"([^"]+)".*/\1/')
+        SHA=$(curl --silent "https://api.github.com/repos/Psychoboy/PhantomBot/commits/${BRANCH}" | grep '"sha":' | sed -E 's/.*"sha":\s*"([^"]+)".*/\1/')
         echo ${BRANCH}
         echo "##[set-output name=branch;]$(echo ${BRANCH})"
         echo ${BRANCH:1}
@@ -91,7 +91,7 @@ jobs:
     - name: Checkout PhantomBot Repository
       uses: actions/checkout@v2
       with:
-        repository: PhantomBot/PhantomBot
+        repository: Psychoboy/PhantomBot
         ref: refs/tags/${{ needs.workflowvars.outputs.branch }}
         persist-credentials: false
     - name: Set up JDK 11
@@ -117,7 +117,7 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v3
       with:
-        repository: PhantomBot/PhantomBot
+        repository: Psychoboy/PhantomBot
         persist-credentials: false
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v1
@@ -150,7 +150,7 @@ jobs:
     - name: Checkout PhantomBot Repository
       uses: actions/checkout@v2
       with:
-        repository: PhantomBot/PhantomBot
+        repository: Psychoboy/PhantomBot
         ref: refs/tags/${{ needs.workflowvars.outputs.branch }}
         persist-credentials: false
     - name: Set up QEMU
