@@ -30,7 +30,7 @@ jobs:
     - name: Checkout PhantomBot Repository
       uses: actions/checkout@v2
       with:
-        repository: PhantomBot/PhantomBot
+        repository: Psychoboy/PhantomBot
         persist-credentials: false
         path: pb
     - name: Get Revision Variables
