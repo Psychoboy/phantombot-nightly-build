@@ -144,7 +144,7 @@ jobs:
       env:
         REPO: ${{ github.repository }}
       run: |
-        if [ "${REPO}" == "Psychoboy/nightly-build" ]; then
+        if [ "${REPO}" == "Psychoboy/phantombot-nightly-build" ]; then
           echo "Do Nightly Build Publish"
           echo "##[set-output name=dryrun;]$(echo no)"
         else
