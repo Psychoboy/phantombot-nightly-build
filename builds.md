@@ -2,6 +2,7 @@
 
 ###### This file serves as a record of all of the nightly builds that are performed and provides the time the build occurred as well as the Git Repository version.
 -------------------------------------------------------------------------------------------------------------
+###### Nightly Build at Jan 09 12:15:00 2023 (UTC+0000) (Repo: 23ff663) ([View Changes](https://github.com/Psychoboy/PhantomBot/compare/4e2c228...23ff663))
 ###### Nightly Build at Jan 08 12:13:08 2023 (UTC+0000) (Repo: 4e2c228) ([View Changes](https://github.com/Psychoboy/PhantomBot/compare/124eeb6...4e2c228))
 ###### Nightly Build at Jan 06 12:42:39 2023 (UTC+0000) (Repo: 124eeb6) ([View Changes](https://github.com/Psychoboy/PhantomBot/compare/2dfbc13...124eeb6))
 ###### Nightly Build at Jan 06 12:14:05 2023 (UTC+0000) (Repo: 2dfbc13) ([View Changes](https://github.com/Psychoboy/PhantomBot/compare/2d43bb4...2dfbc13))
@@ -22,4 +23,3 @@
 ###### Nightly Build at Nov 13 12:36:05 2022 (UTC+0000) (Repo: 348e041) ([View Changes](https://github.com/PhantomBot/PhantomBot/compare/cf03741...348e041))
 ###### Nightly Build at Nov 12 12:33:48 2022 (UTC+0000) (Repo: cf03741) ([View Changes](https://github.com/PhantomBot/PhantomBot/compare/970222c...cf03741))
 ###### Nightly Build at Nov 11 12:39:54 2022 (UTC+0000) (Repo: 970222c) ([View Changes](https://github.com/PhantomBot/PhantomBot/compare/027683f...970222c))
-###### Nightly Build at Nov 09 12:43:07 2022 (UTC+0000) (Repo: 027683f) ([View Changes](https://github.com/PhantomBot/PhantomBot/compare/1ba738c...027683f))
